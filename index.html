@@ -30,7 +30,7 @@
         <button class="problem" data-start="decision"><span class="ico">🧭</span><span><b>Je dois prendre une décision</b><small>J’hésite et je n’arrive plus à trancher.</small></span><span>›</span></button>
         <button class="problem" data-confidence-start><span class="ico">🌱</span><span><b>Je manque de confiance en moi</b><small>Je doute de moi ou de mes capacités.</small></span><span>›</span></button>
         <button class="problem" data-pro-start><span class="ico">⏳</span><span><b>Je procrastine</b><small>Je sais ce que je voudrais faire, mais je repousse.</small></span><span>›</span></button>
-        <button class="problem" data-soon="lost"><span class="ico">🌫️</span><span><b>Je me sens perdu(e)</b><small>Je ne sais plus vraiment où je vais.</small></span><span class="soon">Bientôt</span></button>
+        <button class="problem" data-lost-start><span class="ico">🌫️</span><span><b>Je me sens perdu(e)</b><small>Je ne sais plus vraiment où je vais.</small></span><span>›</span></button>
         <button class="problem" data-soon="rumination"><span class="ico">🔁</span><span><b>Je pense trop</b><small>La même situation tourne en boucle dans ma tête.</small></span><span class="soon">Bientôt</span></button>
         <button class="problem" data-soon="limits"><span class="ico">🛡️</span><span><b>J’ai du mal à poser mes limites</b><small>Je dis oui alors que j’aimerais dire non.</small></span><span class="soon">Bientôt</span></button>
         <button class="problem" data-soon="failure"><span class="ico">⚡</span><span><b>J’ai peur d’échouer</b><small>La peur m’empêche d’essayer ou d’avancer.</small></span><span class="soon">Bientôt</span></button>
@@ -42,11 +42,11 @@
     </section>
 
     <section id="explore" class="screen">
-      <div class="hero"><div class="eyebrow">Explorer</div><h2>10 chemins pour débloquer une situation</h2><p class="muted">Trois parcours sont maintenant interactifs. Les suivants seront ajoutés progressivement après validation de l’expérience.</p></div>
+      <div class="hero"><div class="eyebrow">Explorer</div><h2>10 chemins pour débloquer une situation</h2><p class="muted">Quatre parcours sont maintenant interactifs. Les suivants seront ajoutés progressivement après validation de l’expérience.</p></div>
       <div class="card soft-green"><h3>🧭 La Boussole du choix</h3><p>Transformer une décision confuse en critères, faits, craintes et expérience concrète.</p><button class="cta" data-start="decision">Commencer</button></div>
       <div class="card soft-green"><h3>🌱 Le Miroir des preuves</h3><p>Confronter le doute à des éléments observables et créer un petit test qui apporte une preuve nouvelle.</p><button class="cta" data-confidence-start>Commencer</button></div>
       <div class="card soft-green"><h3>⏳ Le Frein caché</h3><p>Identifier ce qui rend le démarrage difficile et réduire le premier pas jusqu’à ce qu’il soit crédible.</p><button class="cta" data-pro-start>Commencer</button></div>
-      <div class="card"><b>🌫️ La Carte des priorités</b><p class="muted">Se sentir perdu(e)</p></div>
+      <div class="card soft-green"><h3>🌫️ La Carte des priorités</h3><p>Repérer ce qui donne de l’énergie, ce qui épuise et faire émerger une direction à tester sans devoir tout décider.</p><button class="cta" data-lost-start>Commencer</button></div>
       <div class="card"><b>🔁 Le Cercle de contrôle</b><p class="muted">Rumination</p></div>
       <div class="card"><b>🛡️ La Frontière personnelle</b><p class="muted">Limites</p></div>
       <div class="card"><b>⚡ Le Test du scénario</b><p class="muted">Peur d’échouer</p></div>
@@ -63,7 +63,7 @@
     <section id="me" class="screen">
       <div class="hero"><div class="eyebrow">Moi</div><h2>Clarity, à ton rythme</h2></div>
       <div class="card cream"><h3>Données</h3><p>Cette V0 n’envoie pas tes réponses à un serveur. Elles sont enregistrées localement sur cet appareil via le stockage du navigateur.</p><button class="secondary" id="eraseBtn">Effacer mes données locales</button></div>
-      <div class="card"><h3>À propos</h3><p><b>Clarity.</b> Comprendre. Clarifier. Avancer.</p><p class="muted">Prototype de validation — Décision + Confiance + Procrastination.</p></div>
+      <div class="card"><h3>À propos</h3><p><b>Clarity.</b> Comprendre. Clarifier. Avancer.</p><p class="muted">Prototype de validation — Décision + Confiance + Procrastination + Priorités.</p></div>
     </section>
 
     <section id="flow" class="screen">
@@ -82,5 +82,6 @@
 <script src="app.js?v=2"></script>
 <script src="confidence.js?v=1"></script>
 <script src="procrastination.js?v=1"></script>
+<script src="lost.js?v=1"></script>
 </body>
 </html>
