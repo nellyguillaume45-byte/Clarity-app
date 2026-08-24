@@ -33,7 +33,7 @@
         <button class="problem" data-lost-start><span class="ico">🌫️</span><span><b>Je me sens perdu(e)</b><small>Je ne sais plus vraiment où je vais.</small></span><span>›</span></button>
         <button class="problem" data-rumination-start><span class="ico">🔁</span><span><b>Je pense trop</b><small>La même situation tourne en boucle dans ma tête.</small></span><span>›</span></button>
         <button class="problem" data-limits-start><span class="ico">🛡️</span><span><b>J’ai du mal à poser mes limites</b><small>Je dis oui alors que j’aimerais dire non.</small></span><span>›</span></button>
-        <button class="problem" data-soon="failure"><span class="ico">⚡</span><span><b>J’ai peur d’échouer</b><small>La peur m’empêche d’essayer ou d’avancer.</small></span><span class="soon">Bientôt</span></button>
+        <button class="problem" data-failure-start><span class="ico">⚡</span><span><b>J’ai peur d’échouer</b><small>La peur m’empêche d’essayer ou d’avancer.</small></span><span>›</span></button>
         <button class="problem" data-soon="motivation"><span class="ico">🔋</span><span><b>Je manque de motivation</b><small>J’ai du mal à me mettre en mouvement.</small></span><span class="soon">Bientôt</span></button>
         <button class="problem" data-soon="relationship"><span class="ico">🤝</span><span><b>Une relation me pèse</b><small>Je ne sais plus comment gérer une relation.</small></span><span class="soon">Bientôt</span></button>
         <button class="problem" data-soon="change"><span class="ico">🌅</span><span><b>J’ai besoin de changement</b><small>Je sais que quelque chose doit évoluer.</small></span><span class="soon">Bientôt</span></button>
@@ -42,14 +42,14 @@
     </section>
 
     <section id="explore" class="screen">
-      <div class="hero"><div class="eyebrow">Explorer</div><h2>10 chemins pour débloquer une situation</h2><p class="muted">Six parcours sont maintenant interactifs. Les suivants seront ajoutés progressivement après validation de l’expérience.</p></div>
+      <div class="hero"><div class="eyebrow">Explorer</div><h2>10 chemins pour débloquer une situation</h2><p class="muted">Sept parcours sont maintenant interactifs. Les suivants seront ajoutés progressivement après validation de l’expérience.</p></div>
       <div class="card soft-green"><h3>🧭 La Boussole du choix</h3><p>Transformer une décision confuse en critères, faits, craintes et expérience concrète.</p><button class="cta" data-start="decision">Commencer</button></div>
       <div class="card soft-green"><h3>🌱 Le Miroir des preuves</h3><p>Confronter le doute à des éléments observables et créer un petit test qui apporte une preuve nouvelle.</p><button class="cta" data-confidence-start>Commencer</button></div>
       <div class="card soft-green"><h3>⏳ Le Frein caché</h3><p>Identifier ce qui rend le démarrage difficile et réduire le premier pas jusqu’à ce qu’il soit crédible.</p><button class="cta" data-pro-start>Commencer</button></div>
       <div class="card soft-green"><h3>🌫️ La Carte des priorités</h3><p>Repérer ce qui donne de l’énergie, ce qui épuise et faire émerger une direction à tester sans devoir tout décider.</p><button class="cta" data-lost-start>Commencer</button></div>
       <div class="card soft-green"><h3>🔁 Le Cercle de contrôle</h3><p>Séparer faits, interprétations et zones de contrôle pour sortir d’une réflexion qui tourne en boucle.</p><button class="cta" data-rumination-start>Commencer</button></div>
       <div class="card soft-green"><h3>🛡️ La Frontière personnelle</h3><p>Clarifier ce qui ne convient plus, formuler une limite concrète et privilégier la sécurité si une confrontation peut augmenter le risque.</p><button class="cta" data-limits-start>Commencer</button></div>
-      <div class="card"><b>⚡ Le Test du scénario</b><p class="muted">Peur d’échouer</p></div>
+      <div class="card soft-green"><h3>⚡ Le Test du scénario</h3><p>Transformer une peur d’échouer en risque concret, récupérable et testable à petite échelle.</p><button class="cta" data-failure-start>Commencer</button></div>
       <div class="card"><b>🔋 La Jauge d’énergie</b><p class="muted">Motivation</p></div>
       <div class="card"><b>🤝 La Carte de la relation</b><p class="muted">Relations</p></div>
       <div class="card"><b>🌅 Le Pont vers la suite</b><p class="muted">Besoin de changement</p></div>
@@ -63,7 +63,7 @@
     <section id="me" class="screen">
       <div class="hero"><div class="eyebrow">Moi</div><h2>Clarity, à ton rythme</h2></div>
       <div class="card cream"><h3>Données</h3><p>Cette V0 n’envoie pas tes réponses à un serveur. Elles sont enregistrées localement sur cet appareil via le stockage du navigateur.</p><button class="secondary" id="eraseBtn">Effacer mes données locales</button></div>
-      <div class="card"><h3>À propos</h3><p><b>Clarity.</b> Comprendre. Clarifier. Avancer.</p><p class="muted">Prototype de validation — 6 parcours interactifs.</p></div>
+      <div class="card"><h3>À propos</h3><p><b>Clarity.</b> Comprendre. Clarifier. Avancer.</p><p class="muted">Prototype de validation — 7 parcours interactifs.</p></div>
     </section>
 
     <section id="flow" class="screen">
@@ -79,12 +79,13 @@
   <button class="tab" data-tab="journey"><span>⌁</span>Mon parcours</button>
   <button class="tab" data-tab="me"><span>○</span>Moi</button>
 </nav>
-<script src="storage.js?v=2"></script>
+<script src="storage.js?v=3"></script>
 <script src="app.js?v=2"></script>
 <script src="confidence.js?v=1"></script>
 <script src="procrastination.js?v=1"></script>
 <script src="lost.js?v=1"></script>
 <script src="rumination.js?v=1"></script>
 <script src="limits.js?v=1"></script>
+<script src="failure.js?v=1"></script>
 </body>
 </html>
