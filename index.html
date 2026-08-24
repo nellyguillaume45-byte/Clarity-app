@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#02C172">
   <title>Clarity — Comprendre. Clarifier. Avancer.</title>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 <div class="app">
@@ -26,6 +26,7 @@
         <p id="resumeText">Tu as un parcours en cours.</p>
         <button class="cta" id="resumeBtn" type="button">Continuer</button>
       </div>
+      <button class="problem orientation-entry" data-orientation-start><span class="ico">✦</span><span><b>Je ne sais pas ce qui me bloque</b><small>Deux questions pour trouver un bon point de départ.</small></span><span>›</span></button>
       <div class="stack">
         <button class="problem" data-start="decision"><span class="ico">🧭</span><span><b>Je dois prendre une décision</b><small>J’hésite et je n’arrive plus à trancher.</small></span><span>›</span></button>
         <button class="problem" data-confidence-start><span class="ico">🌱</span><span><b>Je manque de confiance en moi</b><small>Je doute de moi ou de mes capacités.</small></span><span>›</span></button>
@@ -56,7 +57,7 @@
     </section>
 
     <section id="journey" class="screen">
-      <div class="hero"><div class="eyebrow">Mon parcours</div><h2>Ce que tu as clarifié</h2><p class="muted">Tes données restent dans ce navigateur pour cette V0.</p></div>
+      <div class="hero"><div class="eyebrow">Mon parcours</div><h2>Ce que tu as clarifié</h2><p class="muted">Retrouve tes réflexions, tes prochains pas et ce que tes essais t’ont appris.</p></div>
       <div id="journeyList"></div>
     </section>
 
@@ -90,5 +91,7 @@
 <script src="motivation.js?v=1"></script>
 <script src="relationship.js?v=1"></script>
 <script src="change.js?v=1"></script>
+<script src="orientation.js?v=1"></script>
+<script src="journey.js?v=1"></script>
 </body>
 </html>
