@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 48" role="img" aria-labelledby="title desc">
+  <title id="title">Clarity</title>
+  <desc id="desc">Logo Clarity avec soleil doré, feuilles vertes et nom bleu nuit.</desc>
+  <g transform="translate(1 1)">
+    <circle cx="22" cy="7" r="5.5" fill="#F6BB63"/>
+    <path d="M20.8 39.5C10.7 36.6 5.1 29.3 6.2 17.2c.3-3.2 1.2-6.1 2.6-8.6 8.8 1.9 14.1 8 14.6 16.6.3 5.1-.6 9.9-2.6 14.3Z" fill="#02C172"/>
+    <path d="M23.2 39.5c10.1-2.9 15.7-10.2 14.6-22.3-.3-3.2-1.2-6.1-2.6-8.6-8.8 1.9-14.1 8-14.6 16.6-.3 5.1.6 9.9 2.6 14.3Z" fill="#00A866"/>
+    <path d="M22 39.2c-1.9-8.7-1-16.6 2.8-23.3" fill="none" stroke="#0D1B2A" stroke-opacity=".13" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+  <text x="48" y="35" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="-1.2" fill="#0D1B2A">Clarity</text>
+  <circle cx="163" cy="34" r="3.6" fill="#F6BB63"/>
+</svg>
