@@ -38,7 +38,8 @@ function renderJourney(){
   host.innerHTML=html;bindJourney(host);
 }
 function findIndex(h,id){for(var i=0;i<h.length;i++){if(String(h[i].id)===String(id))return i}return -1;}
-function openFollowup(id,markDone){var h=read(),i=findIndex(h,id);if(i<0)return;if(markDone){h[i].done=true;write(h)}renderJourney();var box=document.querySelector('[data-followup="'+CSS.escape(String(id))+'"]');if(box){box.classList.remove("hidden");var ta=box.querySelector("textarea");if(ta)ta.focus()}renderHomeNext();}
+function followupById(id){var boxes=document.querySelectorAll("[data-followup]");for(var i=0;i<boxes.length;i++){if(String(boxes[i].getAttribute("data-followup"))===String(id))return boxes[i]}return null;}
+function openFollowup(id,markDone){var h=read(),i=findIndex(h,id);if(i<0)return;if(markDone){h[i].done=true;write(h)}renderJourney();var box=followupById(id);if(box){box.classList.remove("hidden");var ta=box.querySelector("textarea");if(ta)ta.focus()}renderHomeNext();}
 function bindJourney(host){
   host.querySelectorAll("[data-j-done]").forEach(function(b){b.addEventListener("click",function(){openFollowup(b.dataset.jDone,true)})});
   host.querySelectorAll("[data-j-learn]").forEach(function(b){b.addEventListener("click",function(){openFollowup(b.dataset.jLearn,false)})});
