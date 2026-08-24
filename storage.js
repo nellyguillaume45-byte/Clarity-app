@@ -6,7 +6,8 @@ var DRAFTS=[
   "clarity_v0_procrastination_state",
   "clarity_v0_lost_state",
   "clarity_v0_rumination_state",
-  "clarity_v0_limits_state"
+  "clarity_v0_limits_state",
+  "clarity_v0_failure_state"
 ];
 var ROUTES=[
   {selector:'[data-start="decision"]',keep:"clarity_v0_state"},
@@ -14,7 +15,8 @@ var ROUTES=[
   {selector:"[data-pro-start]",keep:"clarity_v0_procrastination_state"},
   {selector:"[data-lost-start]",keep:"clarity_v0_lost_state"},
   {selector:"[data-rumination-start]",keep:"clarity_v0_rumination_state"},
-  {selector:"[data-limits-start]",keep:"clarity_v0_limits_state"}
+  {selector:"[data-limits-start]",keep:"clarity_v0_limits_state"},
+  {selector:"[data-failure-start]",keep:"clarity_v0_failure_state"}
 ];
 function clearExcept(keep){DRAFTS.forEach(function(k){if(k!==keep)localStorage.removeItem(k)});}
 document.addEventListener("click",function(e){
