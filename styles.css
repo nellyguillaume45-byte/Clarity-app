@@ -43,6 +43,8 @@ p{line-height:1.55;margin:0 0 12px}
 .problem{display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;text-align:left;width:100%;border:1px solid var(--line);border-radius:22px;background:#fff;padding:16px;box-shadow:var(--shadow)}
 .problem .ico{font-size:24px}
 .problem small{display:block;opacity:.66;margin-top:3px;line-height:1.3}
+.orientation-entry{margin:0 0 14px;background:var(--cream);border-color:var(--gold);box-shadow:none}
+.orientation-entry .ico{color:var(--navy)}
 .soon{font-size:11px;font-weight:800;background:var(--cream);border-radius:999px;padding:5px 8px}
 .field{margin:16px 0}
 label{display:block;font-weight:800;margin-bottom:8px}
@@ -83,6 +85,15 @@ input:focus,textarea:focus{border-color:var(--green-mid);box-shadow:0 0 0 4px rg
 .counter{font-size:12px;opacity:.62;text-align:right;margin-top:5px}
 .divider{height:1px;background:var(--line);margin:22px 0}
 .hidden{display:none!important}
+.journey-section-title{margin:28px 2px 8px}
+.journey-section-title h3{margin-bottom:2px}
+.journey-focus{margin-top:4px}
+.journey-action{display:grid;gap:4px;margin:14px 0;padding:13px 14px;border-radius:16px;background:var(--cream)}
+.journey-action b{font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.journey-status{display:inline-block;font-size:12px;font-weight:800;border-radius:999px;padding:6px 9px;background:var(--cream)}
+.journey-status.done-state{background:var(--green-pale)}
+.followup{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.followup textarea{min-height:86px}
 
 /* La question active reste visible pendant que les champs défilent. */
 #flow.sticky-question .progress-wrap{
